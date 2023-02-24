@@ -26,3 +26,21 @@
 | gpt2_chinese |86.00  | 84.02  |84.31 |
 | ancientGPT |88.34 |88.38 | 88.29 |
 |sikuGPT | 90.19|90.15 |90.09 |
+
+
+## 使用方法
+
+### Huggingface Transformers
+
+基于[Huggingface Transformers](https://github.com/huggingface/transformers)的`from_pretrained`方法可以直接在线获取SikuGPT模型。
+
+```python
+
+from transformers import AutoTokenizer, AutoModelForCausalLM
+
+tokenizer = AutoTokenizer.from_pretrained("JeffreyLau/SikuGPT2")
+
+model = AutoModelForCausalLM.from_pretrained("JeffreyLau/SikuGPT2")
+
+```
+
