@@ -44,3 +44,12 @@ model = AutoModelForCausalLM.from_pretrained("JeffreyLau/SikuGPT2")
 
 ```
 
+## 古文生成、古诗词生成、古白翻译预训练模型
+
+古文生成预训练模型 **SikuGPT2**：https://huggingface.co/JeffreyLau/SikuGPT2
+
+古诗词生成预训练模型 **SikuGPT2-poem**：https://huggingface.co/JeffreyLau/SikuGPT2-poem
+
+古白翻译预训练模型 **SikuGPT2-translation**：https://huggingface.co/LC748NLP/SikuGPT2-translation
+
+
