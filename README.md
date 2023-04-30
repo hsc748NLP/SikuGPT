@@ -52,4 +52,51 @@ model = AutoModelForCausalLM.from_pretrained("JeffreyLau/SikuGPT2")
 
 古白翻译预训练模型 **SikuGPT2-translation**：https://huggingface.co/LC748NLP/SikuGPT2-translation
 
+# English
+
+## Introduction
+
+In 2022, generative AI has made remarkable achievements in various fields. The diffusion models that automatically generate images, cross-modal models that generate videos with one click, and the astounding ChatGPT all showcase the charm of AIGC (AI-Generated Content). The China Academy of Information and Communications Technology pointed out in its "White Paper on Artificial Intelligence-Generated Content (AIGC) that AIGC will become a unique information production method in the web3.0 era, following PGC (Professionally Generated Content) and UGC (User Generated Content). Large-scale pre-trained models have officially entered people's lives as productivity tools, bringing about tremendous changes to the industry.In this study, we developed a SikuGPT pre-trained model based on the GPT2 model for the automatic generation of ancient texts. We verified the performance of the generative model in two categories of tasks: text translation and text comprehension. In this article, we also released an open-source Ancient Chinese-Modern Chinese translation model fine-tuned with a bilingual parallel corpus, with the twofold aim of promoting research efficiency for scholars working in Chinese ancient texts and boosting the international dissemination of Chinese ancient culture. 
+
+## Performance verification
+
+Machine translation task
+
+|  pretrained models  |BLUE-1 | BLUE-2| BLUE-3 | BLUE-4 |
+| :----------------: | :----------: | :---------: | :---------: | :---------: |
+| sikuBERT+unilm | 0.6521  | 0.5291  | 0.4446 | 0.3755|
+| ancientGPT | 0.7701 | 0.6143 | 0.5133 | 0.4342 |
+|sikuGPT | 0.7655 |0.6172 |0.5196 | 0.4425 |
+
+Text classification task
+
+|  pretrained models  |P（%） |R（%）|F（%） |
+| :----------------: | :----------: | :---------: | :---------: |
+| gpt2_chinese |86.00  | 84.02  |84.31 |
+| ancientGPT |88.34 |88.38 | 88.29 |
+|sikuGPT | 90.19|90.15 |90.09 |
+
+## How to use
+
+### Huggingface Transformers
+
+```python
+
+from transformers import AutoTokenizer, AutoModelForCausalLM
+
+tokenizer = AutoTokenizer.from_pretrained("JeffreyLau/SikuGPT2")
+
+model = AutoModelForCausalLM.from_pretrained("JeffreyLau/SikuGPT2")
+
+```
+
+## Pre-trained model of ancient text generation, ancient poetry generation and ancient chinese - modern chinese translation
+
+ancient text generation **SikuGPT2**：https://huggingface.co/JeffreyLau/SikuGPT2
+
+ancient poetry generation **SikuGPT2-poem**：https://huggingface.co/JeffreyLau/SikuGPT2-poem
+
+ancient chinese - modern chinese translation **SikuGPT2-translation**：https://huggingface.co/LC748NLP/SikuGPT2-translation
+
+
 
