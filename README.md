@@ -52,7 +52,7 @@ model = AutoModelForCausalLM.from_pretrained("JeffreyLau/SikuGPT2")
 
 古白翻译预训练模型 **SikuGPT2-translation**：https://huggingface.co/LC748NLP/SikuGPT2-translation
 
-##引用
+## 引用
 
 如果你觉得我们的工作有帮助的话，请考虑引用下列论文：
 ```
@@ -110,7 +110,7 @@ ancient poetry generation **SikuGPT2-poem**：https://huggingface.co/JeffreyLau/
 
 ancient chinese - modern chinese translation **SikuGPT2-translation**：https://huggingface.co/LC748NLP/SikuGPT2-translation
 
-##Citation
+## Citation
 
 If you find our work helpful, please consider citing the following papers：
 ```
