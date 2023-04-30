@@ -52,6 +52,18 @@ model = AutoModelForCausalLM.from_pretrained("JeffreyLau/SikuGPT2")
 
 古白翻译预训练模型 **SikuGPT2-translation**：https://huggingface.co/LC748NLP/SikuGPT2-translation
 
+##引用
+
+如果你觉得我们的工作有帮助的话，请考虑引用下列论文：
+```
+@article{chang2023sikugpt,
+  title={SikuGPT: A Generative Pre-trained Model for Intelligent Information Processing of Ancient Texts from the Perspective of Digital Humanities},
+  author={Chang, Liu and Dongbo, Wang and Zhixiao, Zhao and Die, Hu and Mengcheng, Wu and Litao, Lin and Si, Shen and Bin, Li and Jiangfeng, Liu and Hai, Zhang and others},
+  journal={arXiv preprint arXiv:2304.07778},
+  year={2023}
+}
+```
+
 # English
 
 ## Introduction
@@ -98,5 +110,15 @@ ancient poetry generation **SikuGPT2-poem**：https://huggingface.co/JeffreyLau/
 
 ancient chinese - modern chinese translation **SikuGPT2-translation**：https://huggingface.co/LC748NLP/SikuGPT2-translation
 
+##Citation
 
+If you find our work helpful, please consider citing the following papers：
+```
+@article{chang2023sikugpt,
+  title={SikuGPT: A Generative Pre-trained Model for Intelligent Information Processing of Ancient Texts from the Perspective of Digital Humanities},
+  author={Chang, Liu and Dongbo, Wang and Zhixiao, Zhao and Die, Hu and Mengcheng, Wu and Litao, Lin and Si, Shen and Bin, Li and Jiangfeng, Liu and Hai, Zhang and others},
+  journal={arXiv preprint arXiv:2304.07778},
+  year={2023}
+}
+```
 
